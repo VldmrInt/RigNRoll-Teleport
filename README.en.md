@@ -2,6 +2,15 @@
 
 [Русская инструкция](README.md)
 
+Clone the repository into the `Tools/Teleport` folder inside the game installation:
+
+```powershell
+git clone https://github.com/VldmrInt/RigNRoll-Teleport.git Tools/Teleport
+Copy-Item Tools/Teleport/game-root.example.txt Tools/Teleport/game-root.txt
+```
+
+Set the game path in `game-root.txt`, then run `Tools/Teleport/Teleport.bat`.
+
 Double-click `Teleport.bat` to start. Close the game first if it is already running. The agent loads at game startup; the launcher preserves any existing `JAVA_TOOL_OPTIONS` settings.
 
 1. Load a save or start a game.
