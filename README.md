@@ -28,7 +28,7 @@ Copy-Item Tools/Teleport/game-root.example.txt Tools/Teleport/game-root.txt
 
 Перенос использует штатный `actorveh.teleport` под `eng.lock`, обнуляет скорость перед переносом и ждёт callback `MakeTeleport`. После callback проверяются фактические координаты машины. GUI работает в Swing, игровые операции — в отдельном потоке. При ошибке или тайм-ауте повторная команда автоматически не отправляется.
 
-Каталог инструмента: `Tools/Teleport`. Скопируйте `game-root.example.txt` в `game-root.txt` и укажите в нём корневую папку игры. Сборка: `powershell -ExecutionPolicy Bypass -File Tools/Teleport/build.ps1`. Self-test: аналогично `Tools/Teleport/test.ps1`; тесты выполняются на встроенной Java 5. Для компиляции используется установленный JDK 21.
+Каталог инструмента: `Tools/Teleport`. Скопируйте `game-root.example.txt` в `game-root.txt` и укажите в нём корневую папку игры. Готовый `Teleport.jar` уже включён; для пересборки нужен JDK 21 через `JAVA_HOME` или `PATH`. Сборка: `powershell -ExecutionPolicy Bypass -File Tools/Teleport/build.ps1`. Self-test: аналогично `Tools/Teleport/test.ps1`; тесты выполняются на встроенной Java 5.
 
 Журнал `teleport.log` находится в `Tools/Teleport` при запуске из корня или из `MonsterCup`. Записываются имя точки, координаты до/после и ошибки.
 

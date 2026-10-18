@@ -5,9 +5,9 @@ $launcher = Join-Path $gameRoot 'rungame.exe'
 $agent = Join-Path $PSScriptRoot 'Teleport.jar'
 $agentOptions = ''
 
-$running = Get-CimInstance Win32_Process -Filter "Name='rnr.exe'" | Where-Object { $_.ExecutablePath -eq $gameExe }
+$running = Get-Process rnr -ErrorAction SilentlyContinue | Where-Object { $_.Path -eq $gameExe }
 if ($running) {
-    throw "Rig'n'Roll is already running (PID $($running.ProcessId)). Close it, then start this script."
+    throw "Rig'n'Roll is already running (PID $($running.Id)). Close it, then start this script."
 }
 if (-not (Test-Path -LiteralPath $agent)) {
     & (Join-Path $PSScriptRoot 'build.ps1')

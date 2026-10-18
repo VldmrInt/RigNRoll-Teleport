@@ -26,7 +26,7 @@ Locations come from the current world's `MissionsMap`: warehouses, bars, offices
 
 Teleport uses the game's `actorveh.teleport` API under the engine lock, stops the truck first, waits for the engine callback, then checks the truck's actual coordinates. If the game does not confirm completion, the tool does not retry automatically. Closing the window minimizes it; the agent stays active until the game exits. Refresh the list after loading a different save.
 
-Copy `game-root.example.txt` to `game-root.txt` and set the path to your game installation. Build with `powershell -ExecutionPolicy Bypass -File Tools/Teleport/build.ps1`. Run the self-test with `Tools/Teleport/test.ps1`. The bundled runtime is Java 5; compilation requires JDK 21.
+Copy `game-root.example.txt` to `game-root.txt` and set the path to your game installation. `Teleport.jar` is already included; rebuilding requires JDK 21 through `JAVA_HOME` or `PATH`. Build with `powershell -ExecutionPolicy Bypass -File Tools/Teleport/build.ps1`. Run the self-test with `Tools/Teleport/test.ps1`. The bundled runtime is Java 5.
 
 The log is `Tools/Teleport/teleport.log` whether launched from the game root or from `MonsterCup`.
 

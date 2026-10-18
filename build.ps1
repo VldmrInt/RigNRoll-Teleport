@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-$jdk = 'C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot\bin'
+$jdk = if ($env:JAVA_HOME) { Join-Path $env:JAVA_HOME 'bin' } else { Split-Path (Get-Command javac.exe -ErrorAction Stop).Source }
 $classes = Join-Path $PSScriptRoot ('build\' + [guid]::NewGuid().ToString('N'))
 $gameRoot = (Get-Content -LiteralPath (Join-Path $PSScriptRoot 'game-root.txt') -Raw).Trim()
 $required = @('Data\scripts.jar', 'Jvm\bin\java.exe', 'Bin\rnr.exe', 'rungame.exe')
