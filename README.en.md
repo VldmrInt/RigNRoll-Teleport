@@ -32,4 +32,4 @@ The log is `Tools/Teleport/teleport.log` when the tool is inside the game direct
 
 ### Verification
 
-Build and self-test passed on the bundled JVM. In the primary installation, the GUI listed 716 locations and confirmed teleport to warehouse `MP_AL` near Alturas within 0.17 m. In the second installation at `C:\Program Files (x86)\1C\RigNRoll`, the agent also loaded and listed 716 locations, 715 with detailed descriptions. Teleport to `MP_CF` in the second installation was confirmed within 0.99 m. No save was modified. Not every location or trailer teleport was tested.
+Build and self-test passed on the bundled JVM. In the primary installation, the GUI listed 716 locations and confirmed teleport to warehouse `MP_AL` near Alturas within 0.17 m. In the second installation at `C:\Program Files (x86)\1C\RigNRoll`, the agent also loaded and listed 716 locations, 715 with detailed descriptions. Teleport to `MP_CF` in the second installation was confirmed within 0.99 m. The user confirmed that the trailer teleports too. No save was modified. Not every location was tested.
