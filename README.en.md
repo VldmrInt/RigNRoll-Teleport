@@ -28,8 +28,8 @@ Teleport uses the game's `actorveh.teleport` API under the engine lock, stops th
 
 Copy `game-root.example.txt` to `game-root.txt` and set the path to your game installation. `Teleport.jar` is already included; rebuilding requires JDK 21 through `JAVA_HOME` or `PATH`. Build with `powershell -ExecutionPolicy Bypass -File Tools/Teleport/build.ps1`. Run the self-test with `Tools/Teleport/test.ps1`. The bundled runtime is Java 5.
 
-The log is `Tools/Teleport/teleport.log` whether launched from the game root or from `MonsterCup`.
+The log is `Tools/Teleport/teleport.log` when the tool is inside the game directory. If the tool is elsewhere, the log is created in the game's working directory (`MonsterCup`). For installations under `Program Files`, Windows may redirect it to `%LOCALAPPDATA%\VirtualStore\Program Files (x86)\1C\RigNRoll\MonsterCup\teleport.log`.
 
 ### Verification
 
-Build and self-test passed on the bundled JVM. In the primary installation, the GUI listed 716 locations and confirmed teleport to warehouse `MP_AL` near Alturas within 0.17 m. In the second installation at `C:\Program Files (x86)\1C\RigNRoll`, the agent also loaded and listed 716 locations, 715 with detailed descriptions. Teleport in the second installation is not yet verified. No save was modified. Not every location or trailer teleport was tested.
+Build and self-test passed on the bundled JVM. In the primary installation, the GUI listed 716 locations and confirmed teleport to warehouse `MP_AL` near Alturas within 0.17 m. In the second installation at `C:\Program Files (x86)\1C\RigNRoll`, the agent also loaded and listed 716 locations, 715 with detailed descriptions. Teleport to `MP_CF` in the second installation was confirmed within 0.99 m. No save was modified. Not every location or trailer teleport was tested.
