@@ -1,0 +1,101 @@
+package teleport;
+
+final class Texts {
+    static String get(boolean en, String key) {
+        if (!en) {
+            if ("title".equals(key)) return "Rig'n'Roll — Телепорт";
+            if ("search".equals(key)) return "Поиск:";
+            if ("refresh".equals(key)) return "Обновить точки";
+            if ("move".equals(key)) return "Переместиться";
+            if ("choose".equals(key)) return "Выберите точку, чтобы увидеть описание.";
+            if ("initial".equals(key)) return "Загрузите игру, затем обновите точки.";
+            if ("search_access".equals(key)) return "Поиск точки перемещения";
+            if ("list_access".equals(key)) return "Точки перемещения";
+            if ("desc_access".equals(key)) return "Описание выбранной точки";
+            if ("loading".equals(key)) return "Читаю карту… вернитесь в игру на несколько секунд (Alt+Tab).";
+            if ("moving".equals(key)) return "Перенос… вернитесь в игру (Alt+Tab), снимите паузу.";
+            if ("count".equals(key)) return "Точек: %s. Выберите нужную точку.";
+            if ("done".equals(key)) return "Перемещение завершено: %s";
+            if ("error".equals(key)) return "Ошибка: %s";
+            if ("internal_error".equals(key)) return "Не удалось выполнить операцию. См. teleport.log.";
+            if ("no_description".equals(key)) return "Описание в игре отсутствует.";
+            if ("game_text".equals(key)) return "Подробное описание доступно на языке игры.";
+            if ("bar".equals(key)) return "Бар: место встреч и разговоров.";
+            if ("office".equals(key)) return "Офис транспортной компании.";
+            if ("motel".equals(key)) return "Мотель: место отдыха.";
+            if ("warehouse".equals(key)) return "Склад: погрузка и разгрузка заказов.";
+            if ("repair".equals(key)) return "СТО: обслуживание и ремонт машины.";
+            if ("gas".equals(key)) return "АЗС: заправка машины.";
+            if ("scenario".equals(key)) return "Сценарная точка: используется игровыми событиями.";
+            if ("mission".equals(key)) return "Точка задания: используется миссиями.";
+            if ("unknown".equals(key)) return "Точка карты; назначение не указано.";
+            if ("code".equals(key)) return "Код:";
+            if ("coordinates".equals(key)) return "Координаты:";
+            if ("bar_type".equals(key)) return "Бар";
+            if ("office_type".equals(key)) return "Офис";
+            if ("motel_type".equals(key)) return "Мотель";
+            if ("warehouse_type".equals(key)) return "Склад";
+            if ("repair_type".equals(key)) return "СТО";
+            if ("gas_type".equals(key)) return "АЗС";
+            if ("scenario_type".equals(key)) return "Сценарий";
+            if ("mission_type".equals(key)) return "Задание";
+            if ("point_type".equals(key)) return "Точка";
+            if ("NO_MAP".equals(key)) return "Сначала загрузите игру.";
+            if ("NO_POINTS".equals(key)) return "Карта пока не содержит точек. Загрузите мир и обновите список.";
+            if ("STALE_POINT".equals(key)) return "Карта изменилась. Обновите список точек.";
+            if ("NO_CAR".equals(key)) return "Машина игрока ещё не загружена.";
+            if ("CAR_UNAVAILABLE".equals(key)) return "Машина игрока недоступна.";
+            if ("NO_CALLBACK".equals(key)) return "Нет подтверждения переноса. Вернитесь в игру и снимите паузу; команда уже отправлена.";
+            if ("CAR_CHANGED".equals(key)) return "Машина игрока сменилась во время переноса.";
+            if ("NOT_ARRIVED".equals(key)) return "Движок не подтвердил прибытие к точке. См. teleport.log.";
+        }
+        if ("title".equals(key)) return "Rig'n'Roll — Teleport";
+        if ("search".equals(key)) return "Search:";
+        if ("refresh".equals(key)) return "Refresh locations";
+        if ("move".equals(key)) return "Teleport";
+        if ("choose".equals(key)) return "Select a location to see its description.";
+        if ("initial".equals(key)) return "Load a game, then refresh the locations.";
+        if ("search_access".equals(key)) return "Search teleport locations";
+        if ("list_access".equals(key)) return "Teleport locations";
+        if ("desc_access".equals(key)) return "Selected location description";
+        if ("loading".equals(key)) return "Reading map… switch back to the game for a few seconds (Alt+Tab).";
+        if ("moving".equals(key)) return "Teleporting… return to the game (Alt+Tab) and unpause.";
+        if ("count".equals(key)) return "%s locations. Select a destination.";
+        if ("done".equals(key)) return "Teleported to: %s";
+        if ("error".equals(key)) return "Error: %s";
+        if ("internal_error".equals(key)) return "The operation failed. See teleport.log.";
+        if ("no_description".equals(key)) return "No in-game description is available.";
+        if ("game_text".equals(key)) return "Detailed description is available in the game's language.";
+        if ("bar".equals(key)) return "Bar: a place to meet and talk.";
+        if ("office".equals(key)) return "Company office.";
+        if ("motel".equals(key)) return "Motel: a place to rest.";
+        if ("warehouse".equals(key)) return "Warehouse: loading and unloading jobs.";
+        if ("repair".equals(key)) return "Repair shop: service and repair your truck.";
+        if ("gas".equals(key)) return "Gas station: refuel your truck.";
+        if ("scenario".equals(key)) return "Scenario location used by game events.";
+        if ("mission".equals(key)) return "Mission location used by jobs.";
+        if ("unknown".equals(key)) return "Map location; its purpose is unspecified.";
+        if ("code".equals(key)) return "ID:";
+        if ("coordinates".equals(key)) return "Coordinates:";
+        if ("bar_type".equals(key)) return "Bar";
+        if ("office_type".equals(key)) return "Office";
+        if ("motel_type".equals(key)) return "Motel";
+        if ("warehouse_type".equals(key)) return "Warehouse";
+        if ("repair_type".equals(key)) return "Repair shop";
+        if ("gas_type".equals(key)) return "Gas station";
+        if ("scenario_type".equals(key)) return "Scenario";
+        if ("mission_type".equals(key)) return "Mission";
+        if ("point_type".equals(key)) return "Location";
+        if ("NO_MAP".equals(key)) return "Load a game first.";
+        if ("NO_POINTS".equals(key)) return "No map locations are available yet. Load the world and refresh.";
+        if ("STALE_POINT".equals(key)) return "The map changed. Refresh the location list.";
+        if ("NO_CAR".equals(key)) return "The player's vehicle has not loaded yet.";
+        if ("CAR_UNAVAILABLE".equals(key)) return "The player's vehicle is unavailable.";
+        if ("NO_CALLBACK".equals(key)) return "Teleport was not confirmed. Return to the game and unpause; the command was sent.";
+        if ("CAR_CHANGED".equals(key)) return "The player's vehicle changed during teleport.";
+        if ("NOT_ARRIVED".equals(key)) return "The game did not confirm arrival. See teleport.log.";
+        return key;
+    }
+
+    private Texts() { }
+}
